@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/speaking-club-online/static/css/main.c59cc657.css",
+    "main.js": "/speaking-club-online/static/js/main.3521708c.js",
+    "static/js/787.3bb9dee1.chunk.js": "/speaking-club-online/static/js/787.3bb9dee1.chunk.js",
+    "index.html": "/speaking-club-online/index.html",
+    "main.c59cc657.css.map": "/speaking-club-online/static/css/main.c59cc657.css.map",
+    "main.3521708c.js.map": "/speaking-club-online/static/js/main.3521708c.js.map",
+    "787.3bb9dee1.chunk.js.map": "/speaking-club-online/static/js/787.3bb9dee1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c59cc657.css",
+    "static/js/main.3521708c.js"
+  ]
+}
