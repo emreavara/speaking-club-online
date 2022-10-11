@@ -1,9 +1,11 @@
+import React from "react";
 import Main from "./pages/Main";
-
+import styled from "styled-components";
 function App() {
   return (
-    <Main/>
+      <Main />
   );
 }
 
 export default App;
+
