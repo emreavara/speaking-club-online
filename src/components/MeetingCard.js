@@ -37,7 +37,7 @@ function MeetingCard({ data }) {
             marginY: 3,
           }}
         >
-          <Button size="large" variant="contained">
+          <Button href={data.meetingLink} size="large" variant="contained">
             Join
           </Button>
         </Box>
