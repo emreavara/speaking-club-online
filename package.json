@@ -2,7 +2,7 @@
   "name": "speaking-club-online",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://emreavara.github.io/speaking-club-online",
+  "homepage": "https://www.joinandspeak.com",
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
