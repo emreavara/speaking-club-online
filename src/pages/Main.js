@@ -3,13 +3,12 @@ import Footer from "../components/Footer";
 import styled from "styled-components";
 import MeetingCardList from "../components/MeetingCardList";
 import Navi from "../components/Navi";
+import PageLayout from "../components/PageLayout";
 function Main() {
   return (
-    <MainDiv>
-      <Navi />
+    <PageLayout>
       <MeetingCardList />
-      {/* <Footer /> */}
-    </MainDiv>
+    </PageLayout>
   );
 }
 

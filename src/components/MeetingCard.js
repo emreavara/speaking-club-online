@@ -1,12 +1,15 @@
-import React from "react";
-import Card from "@mui/material/Card";
-import CardHeader from "@mui/material/CardHeader";
-import CardMedia from "@mui/material/CardMedia";
-import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
+import {
+  Card,
+  CardHeader,
+  CardMedia,
+  CardContent,
+  Typography,
+  Button,
+  Box,
+  Stack,
+} from "@mui/material";
+import { Link } from "react-router-dom";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
-import Button from "@mui/material/Button";
-import Box from "@mui/material/Box";
 function MeetingCard({ data }) {
   return (
     <Card sx={{ maxWidth: 345 }}>
@@ -37,9 +40,14 @@ function MeetingCard({ data }) {
             marginY: 3,
           }}
         >
-          <Button href={data.meetingLink} size="large" variant="contained">
-            Join
-          </Button>
+          <Stack spacing={1} direction="row">
+            <Button href="/meeting" size="large" variant="contained">
+              More
+            </Button>
+            <Button href={data.meetingLink} size="large" variant="contained">
+              Join
+            </Button>
+          </Stack>
         </Box>
       </CardContent>
     </Card>

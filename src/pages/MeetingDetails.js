@@ -1,10 +1,11 @@
 import React from 'react'
-
-function MeetingDetails() {
+import PageLayout from '../components/PageLayout'
+import MeetingInfo from '../components/MeetingInfo'
+function MeetingDetails({meetingInfo}) {
   return (
-    <div>
-      Meeting Details
-    </div>
+    <PageLayout>
+      <MeetingInfo meeting={meetingInfo} />
+    </PageLayout>
   )
 }
 
