@@ -6,7 +6,6 @@ import MeetingDetails from "./pages/MeetingDetails";
 import meetings from "./data/dummy";
 function App() {
   const germanA2B1 = "German A2 B1 ";
-  console.log(meetings[2])
   return (
     <BrowserRouter>
       <Routes>

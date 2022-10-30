@@ -10,12 +10,19 @@ import {
   List,
   ListItem,
   ListItemText,
-  Divider
+  Divider,
 } from "@mui/material";
 import { height } from "@mui/system";
+import DescriptionCard from "./DescriptionCard";
 function MeetingInfo({ meeting }) {
   return (
-    <Grid container>
+    <Grid
+      sx={{ padding: "10px", marginBottom: 5 }}
+      container
+      direction="row"
+      justifyContent="space-around"
+      alignItems="center"
+    >
       <Grid item sx={{ width: "100%" }}>
         <Box
           sx={{
@@ -23,7 +30,7 @@ function MeetingInfo({ meeting }) {
             justifyContent: "center",
             padding: "5px",
             width: "100%",
-            height: "250px",
+            height: "450px",
           }}
         >
           <img
@@ -32,27 +39,25 @@ function MeetingInfo({ meeting }) {
           />
         </Box>
       </Grid>
-      <Grid item sx={{ width: "100%", padding: "5px" }}>
-        <Stack spacing={3} direction="row">
-          <Box xs={4}>
-            <Card sx={{ maxWidth: 345 }}>
-              <CardHeader title="Target Words" />
-              <CardContent>
-                <List>
-                  <ListItemText>Name</ListItemText>
-                </List>
-              </CardContent>
-            </Card>
-          </Box>
+      <Grid
+        sx={{ padding: "10px", marginTop: 5 }}
+        container
+        direction="row"
+        justifyContent="space-around"
+        alignItems="center"
+      >
+        <Box xs={5}>
+          <DescriptionCard data={meeting.data.targetWords} />
+        </Box>
 
-          <Box xs={3} sm={3} sx={{ backgroundColor: "white", height: "300px" }}>
-            <Typography>Text</Typography>
-          </Box>
-          <Box xs={3} sm={3} sx={{ backgroundColor: "white", height: "300px" }}>
-            <Typography>Text</Typography>
-          </Box>
-        </Stack>
+        <Box xs={5}>
+          <DescriptionCard data={meeting.data.targetGrammar} />
+        </Box>
+        <Box xs={5}>
+          <DescriptionCard data={meeting.data.questions} />
+        </Box>
       </Grid>
+      >
     </Grid>
   );
 }
